@@ -17,5 +17,6 @@ router.get('/services', portfolioController.services);
 
 /* GET contact page. */
 router.get('/contact', portfolioController.contact);
+router.post('/contact', portfolioController.mail);
 
 module.exports = router;
