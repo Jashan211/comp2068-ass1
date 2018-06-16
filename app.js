@@ -3,7 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//for parsing info from form elements
 const bodyParser = require('body-parser');
+//to mail content from form of contact page.
 'use strict';
 const nodemailer = require('nodemailer');
 

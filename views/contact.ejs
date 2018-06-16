@@ -1,5 +1,16 @@
+<!-- File Name: contact.ejs 
+Author's Name: Jashandeep Kaur
+Website Name: jashandeepkaur.azurewebsites.net
+File Description: It is form from where someone can send me message or contact me regarding anything.
+ -->
+
+<!-- header call from partials-->
 <% include partials/header %> 
-  <h1><%= title %></h1>
+  <h1>
+    <%= title %>
+  </h1>
+
+  <!-- form to get information about the person want to contact and then post is to email me -->
   <form method="POST" action="/contact">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
       <input class="mdl-textfield__input" type="text" id="name" name="name">
@@ -22,4 +33,6 @@
         Submit
     </button>
 </form>
+
+<!-- footer call from partials-->
 <% include partials/footer %>

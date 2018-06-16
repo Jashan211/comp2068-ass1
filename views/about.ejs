@@ -1,9 +1,22 @@
+<!-- File Name: about.ejs 
+Author's Name: Jashandeep Kaur
+Website Name: jashandeepkaur.azurewebsites.net
+File Description: It is the view for about link of navbar displaying the information or an overview of my profile.
+ -->
+
+<!-- header call from partials-->
 <% include partials/header %> 
-  <h1><%= title %></h1>
+  <h1>
+    <%= title %>
+  </h1>
+
+  <!-- card-panel style is use referenced from materialize stylesheet template -->
   <div class="card-panel grey lighten-4">
     <blockquote>
     I am a student of georgian college and pursuing diploma in computer programming course. In this course, I have been exposed to work with different programming languages including java, HTML5, CSS, Bootstrap JavaScript, PHP and SQL. Moreover, I have worked with visual studio code and done my web course with great marks. In addition, I have solid organizational leadership and decision-making skills that can make an immediate contribution to your business development. I have also led the evaluation, selection and implementation of new IT technology.
     Beside this I have done my first co-op as a web designer in PreeTel Communication Inc. in Brampton, Ontario. In this, I worked with the wordpress platform and well exposed to the industrial environment and professionism.  
-  </blockquote>
+    </blockquote>
   </div>
+
+<!-- footer call from partials-->
 <% include partials/footer %>

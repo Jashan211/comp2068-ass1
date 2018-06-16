@@ -1,34 +1,50 @@
-<% include partials/header %> 
+<!-- File Name: projects.ejs 
+Author's Name: Jashandeep Kaur
+Website Name: jashandeepkaur.azurewebsites.net
+File Description: It is the view for projects link of the navbar containing information about projects done by me.
+ -->
+
+ <!-- header call from partials-->
+<% include partials/header %>
+
+<!-- embedded stylesheet for positioning heading in the center -->
 <style scoped>
     h1 { text-align: center; 
     }
 </style>
-  <h1><%= title %></h1>
-  <table class="striped highlight">
-      <thead class="red lighten-3">
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Address</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Travel League</td>
-          <td>This project is based on the website for travel agency representing diffrent tourist attractions of different locations all over the world. It is designed to implement ASP.NET Web Frameworks MVC Concepts learned in course of Enterprise Computing.</td>
-          <td>https://travelleagueassignment.azurewebsites.net</td>
-        </tr>
-        <tr>
-          <td>Alan</td>
-          <td>Jellybean</td>
-          <td>$3.76</td>
-        </tr>
-        <tr>
-          <td>Jonathan</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-        </tr>
-      </tbody>
-  </table>
 
+<h1>
+  <%= title %>
+</h1>
+
+<!-- table containing info about projects -->
+<table class="striped highlight">
+  <!-- class gives light red colour to heading of table columns -->
+  <thead class="red lighten-3">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Travel League</td>
+      <td>This project is based on the website for travel agency representing diffrent tourist attractions of different locations all over the world. It is designed to implement ASP.NET Web Frameworks MVC Concepts learned in course of Enterprise Computing.</td>
+      <td><a href="https://travelleagueassignment.azurewebsites.net">Visit site</a></td>
+    </tr>
+    <tr>
+      <td>Water Alarm</td>
+      <td>It was made in Internet of things class. This device can be used for measuring the level of water as it sound when water reach at certain level.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SDLC Physical Model</td>
+      <td>This was a physical model built to explain the SDLC life cycle stages through the example of production of car in waterfall method.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- footer of the page call -->
 <% include partials/footer %>
